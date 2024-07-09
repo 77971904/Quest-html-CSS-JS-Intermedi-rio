@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.imagem {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-image: url("./img/background.jpg");
+	background-repeat: repeat-x;
+	background-size: contain;
+}
+
+.informacao {
+	color: #fff;
+	width: 30rem;
+	margin: 0 6rem;
+}
+
+h1 {
+	display: flex;
+	flex-direction: column;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+p {
+	padding-top: 1.5rem;
+	font-size: 1.5rem;
+}
+
+.formulario {
+	width: 40rem;
+    height: 50rem;
+	background: #fff;
+}
+
+.form {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	margin: 2.2rem;
+}
+
+.campo {
+	height: 3.5rem;
+	padding: 0.8rem 1rem;
+	border-radius: 0.5rem;
+	border: 0.1rem solid #A8A8A8;
+	font-weight: 400;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+.campo::placeholder {
+	font-weight: 700;
+	color: #A8A8A8;
+    font-size: 1rem;
+}
+
+ .campo.mensagem {
+	height: 10rem;
+	max-width: 100%;
+	resize: none;
+}
+
+
+ .texto {
+	font-size: 1.5rem;
+	margin-top: -0.7rem;
+}
+
+.btn {
+	cursor: pointer;
+	height: 4.1rem;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: #3CCC87;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.btn:hover{
+    background-color: #3ccc86ce;
+}
+
+.campos {
+	color: #F52E2E;
+	font-size: 0.8rem;
+	line-height: 1%;
+	visibility: hidden;
+}
+
+.invalido {
+	border: 1px solid #F52E2E;
+}
+
+.valido {
+	border: 1px solid #00C22B;
+}
+
+.error {
+	visibility: visible;
+}
+
+@media (max-width: 576px) {
+    .imagem {
+        flex-direction: column;
+    }
+
+    .informacao {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .formulario {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .formulario {
+        margin-right: 0.5rem;
+    }
+
+    .imagem {
+        margin: 0 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
